@@ -73,9 +73,7 @@ angular.module('starter.services', [])
       return null;
     }
   };
-});
-
-angular.module('starter.services', [])
+})
 
 .factory('Catalogs', function() {
   var catalogs = [{
@@ -106,12 +104,12 @@ angular.module('starter.services', [])
 
   return {
     all: function() {
-      return chats;
+      return catalogs;
     },
-    get: function(chatId) {
-      for (var i = 0; i < chats.length; i++) {
-        if (chats[i].id === parseInt(chatId)) {
-          return chats[i];
+    get: function(catalogId) {
+      for (var i = 0; i < catalogs.length; i++) {
+        if (catalogs[i].id === parseInt(catalogId)) {
+          return catalogs[i];
         }
       }
       return null;
