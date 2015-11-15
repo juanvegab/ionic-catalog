@@ -1,0 +1,12 @@
+{
+  "name": "vianney-app",
+  "app_id": "8e9b7a71",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
